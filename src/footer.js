@@ -1,3 +1,6 @@
+// import files
+import './assets/css/footer.css'
+
 // import image
 import logo from './assets/img/Logo.svg'
 

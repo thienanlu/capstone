@@ -1,0 +1,38 @@
+#header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    background-color: #fff;
+    padding: 0 40px;
+    flex-wrap: wrap;
+}
+
+.header-logo{
+    width: 30%;
+}
+
+.navbar > ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-item{
+    margin-right: 44px;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-item:hover{
+    color: var(--primary-color-2)
+}
+
+.nav-item:last-child{
+    margin-right: 0;
+}
