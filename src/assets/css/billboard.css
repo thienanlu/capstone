@@ -30,20 +30,9 @@
     line-height: 28px;
 }
 
-.billboard-info > button{
-    margin-top: 20px;
-    padding: 16px 36px;
-    border: none;
-    border-radius: 16px;
-    background-color: var(--primary-color-2);
-    color: #333;
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
 .billboard-img{
     width: 350px;
     height: 350px;
     border-radius: 16px;
 }
+

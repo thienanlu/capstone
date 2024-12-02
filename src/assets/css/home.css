@@ -1,0 +1,18 @@
+/* highlight */
+.highlight-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.highlight-heading >  h2{
+    font-size: 40px;
+    font-weight: 450;
+}
+
+.heading-category{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+

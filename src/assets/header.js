@@ -1,9 +1,9 @@
 // import components
-import './assets/css/header.css'
-import Navbar from './components/Navbar';
+import './css/header.css'
+import Navbar from './Navbar';
 
 // import image
-import logo from './assets/img/Logo.svg';
+import logo from './img/Logo.svg';
 
 function Header(){
     return(
@@ -15,3 +15,4 @@ function Header(){
 }
 
 export default Header;
+

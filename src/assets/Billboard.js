@@ -1,8 +1,8 @@
 // import files
-import Button from "./components/button";
-import './assets/css/billboard.css'
+import Button from "./button";
+import './css/billboard.css'
 
-import billboardImage from './assets/img/restaurant.jpg'
+import billboardImage from './img/restaurant.jpg'
 function Billboard(){
     return(
         <section id="billboard" className="app-section">
@@ -12,7 +12,7 @@ function Billboard(){
                 <p>We are a family owned Mediterranean restaurant, focused
                     on traditional recipes served with a modern twist.
                 </p>
-                <Button text="Reserve a table"/>
+                <Button text="Reserve a table" to="/reservation" className="billboard-btn"/>
             </div>
             <img src={billboardImage} alt="Our Restaurant" className="billboard-img"/>
        </section>

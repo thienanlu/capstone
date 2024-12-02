@@ -1,8 +1,8 @@
 // import files
-import './assets/css/footer.css'
+import './css/footer.css'
 
 // import image
-import logo from './assets/img/Logo.svg'
+import logo from './img/Logo.svg'
 
 function Footer(){
     return(
