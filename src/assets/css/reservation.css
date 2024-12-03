@@ -1,0 +1,59 @@
+.reservation-banner{
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color-1);
+}
+
+.reservation-banner > h3{
+    font-size: 64px;
+    font-weight: 400;
+    color: var(--primary-color-2);
+}
+
+.reservation-banner  > img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+/* booking form */
+.form-wrapper{
+
+}
+
+.form-title{
+    text-align: center;
+    font-size: 64px;
+    font-weight: 400;
+    color: var(--primary-color-1);
+}
+
+.booking-form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-input-wrapper{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin: 16px 16px 0 0;
+}
+
+.form-input-wrapper > input{
+    margin-top: 8px;
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    color: #000;
+    background-color: var(--background-color);
+}
+
+.form-input-wrapper > input:focus-visible{
+    outline: none;
+}

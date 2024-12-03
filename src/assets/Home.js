@@ -3,6 +3,8 @@ import Header from './header'
 import Footer from './footer'
 import Billboard from './Billboard'
 import Highlight from './Highlight'
+import Testimonials from './TestimonialsSection'
+import AboutSection from './AboutSection'
 
 import './css/home.css'
 
@@ -12,6 +14,8 @@ function Home(){
             <Header />
             <Billboard />
             <Highlight />
+            <Testimonials />
+            <AboutSection/>
             <Footer />
         </div>
     )

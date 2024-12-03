@@ -4,6 +4,7 @@
   --secondary-color-1: #FBDABB;
   --secondary-color-2: #EE9972;
   --background-color: #EDEFEE;
+  --title-color: #1C3409;
 }
 
 /* reset css */
@@ -22,11 +23,11 @@ h1,h2,h3,h4,h5,h6,li,a{
   font-family: "Markazi Text", serif;
 }
 
-p{
+p,label,input{
   font-family: "Karla", sans-serif;;
 }
 
 .app-section{
-  padding: 40px 40px;
+  padding: 64px 40px;
 }
 
