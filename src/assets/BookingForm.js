@@ -1,5 +1,8 @@
-import  {useState} from 'react'
+import  {useState, useReducer} from 'react'
 import button from './button'
+import ConfirmedBooking from './ConfirmedBooking'
+import BookingImage from './img/restaurant.jpg';
+
 
 
 function BookingForm(props){
@@ -10,12 +13,15 @@ function BookingForm(props){
     const [time, setTime] = useState()
     const [guest, setGuest] = useState()
     const [occasion, setOccasion] = useState()
+    const [isSubmmited, setIsSubmmited] = useState(false)
 
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        clearForm()
-        alert("Account created!");
+        props.submitForm({name, number, date, time, guest, occasion})
+        setIsSubmmited(true)
+        // clearForm()
+        alert("Your booking has been confirmed");
         console.log('table booking for', name, number, date, time, guest, occasion);
       };
 
@@ -29,13 +35,14 @@ function BookingForm(props){
         setOccasion('')
     }
 
-    const handleTime = (e) => {
+    const handleOnDateChange = (e) => {
         setDate(e.target.value)
-        props.dispatch(date, 'UPDATE_TIME')
+        console.log(props.availableTimes)
+        props.dispatch(e.target.value)
     }
 
 
-    return(
+    return( (isSubmmited) ? <ConfirmedBooking name={name} number={number} date={date} time={time} guest={guest} occasion={occasion} /> : (
         <div className="form-wrapper app-section">
             <h3 className='form-title'>RESERVE A TABLE</h3>
             <form className='booking-form' onSubmit={handleSubmit}>
@@ -49,7 +56,7 @@ function BookingForm(props){
                 </div>
                 <div className='form-input-wrapper'>
                     <label>Reservation Date:</label>
-                    <input onChange={handleTime} value={date} type="date" name="date" className='date-input'/>
+                    <input onChange={handleOnDateChange} value={date} type="date" name="date" className='date-input'/>
                 </div>
                 <div className='form-input-wrapper'>
                     <label>Reservation Time:</label>
@@ -75,6 +82,7 @@ function BookingForm(props){
                 <input type='submit' value="Submit" className='submit-btn'></input>
             </form>
         </div>
+    )
     )
 }
 

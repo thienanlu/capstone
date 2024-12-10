@@ -1,12 +1,14 @@
 import React, { useReducer, useState} from "react";
+import { useNavigate } from "react-router-dom";
 import Header from "./header";
 import Footer from "./footer";
+import ConfirmedBooking from "./ConfirmedBooking";
 import BookingForm from "./BookingForm";
-import BookingImage from './img/restaurant.jpg';
+// import BookingImage from './img/restaurant.jpg';
 import './css/reservation.css';
 
 function initializeTimes(){
-    let date = new Date(99, 6, 12);
+    let date = new Date();
     var data = fetchAPI(date)
     return data
 }
@@ -40,38 +42,30 @@ const fetchAPI = function(date) {
 
 const UPDATE_TIME = "update";
 
-const updateTime = (state, action) => {
-    switch (action) {
-      case "UPDATE_TIMES":
-        return { ...state, times: fetchAPI(action.date) };
-      default:
-        return state;
-    };
-  };
-
+const updateTime = (availableTimes, date) => {
+  const response = fetchAPI(new Date(date));
+  return (response.length !== 0) ? response : availableTimes; 
+}
 
 function Reservation() {
-    const [availableTimes, dispatch] = useReducer(updateTime(), initializeTimes());
-    // const handleRemoveTime = (time) => {
-    //     dispatch({ type: REMOVE_TIME, payload: time });
-    // };
+    const [availableTimes, dispatch] = useReducer(updateTime, [], initializeTimes);
 
-    // const handleAddTime = (time) => {
-    //     dispatch({ type: ADD_TIME, payload: time });
-    // };
+    const navigate = useNavigate()
+
+    const submitForm = (formData) => {
+      let isSubmmited = false;
+      const response = submitAPI(formData);
+    }
 
     return (
         <div className="reservation-page">
             <Header />
-            <section className="reservation-banner app-section">
-                <h3>Reserve a table</h3>
-                <img src={BookingImage} alt="restaurant-image" />
-            </section>
             <BookingForm 
                 availableTimes={availableTimes} 
                 // onRemoveTime={handleRemoveTime} 
                 // onAddTime={handleAddTime}
-                dispatch={updateTime}
+                dispatch={dispatch}
+                submitForm={submitForm}
             />
             <Footer />
         </div>

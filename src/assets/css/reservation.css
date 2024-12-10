@@ -20,8 +20,8 @@
 
 /* booking form */
 .form-wrapper{
-    padding: 80px 40px;
     margin-top: 120px;
+    padding: 80px 40px;
 }
 
 .form-title{
@@ -77,4 +77,47 @@
 .submit-btn:hover{
     background-color: var(--primary-color-1);
     color: var(--primary-color-2);
+}
+
+/* confirmation page */
+.confirm-booking-wrapper{
+    margin-top: 120px;
+    padding: 40px 40px;
+}
+
+.confirm-booking-title{
+    font-size: 64px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--primary-color-1);
+}
+
+.confirm-booking-wrapper > h4{
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--title-color);
+}
+
+.booking-details{
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.booking-details > p{
+    font-size: 24px;
+    margin-top: 20px;
+    width: 48%;
+}
+
+.booking-details span{
+    font-weight: 500;
+}
+
+.confirm-booking-wrapper .btn{
+    width: 100%;
+    text-align: center;
 }
