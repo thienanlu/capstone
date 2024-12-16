@@ -14,12 +14,12 @@ function Footer(){
             <div className="footer-col">
                 <h3 className="footer-col-title">DOORMAT NAVIGATION</h3>
                 <ul>
-                    <Link to="/" className="footer-item">Home</Link>
-                    <Link to="/about" className="footer-item">About</Link>
-                    <Link to="/menu" className="footer-item">Menu</Link>
-                    <Link to="/reservation" className="footer-item">Reservation</Link>
-                    <Link to="/order" className="footer-item">Order Online</Link>
-                    <Link to="/login" className="footer-item">Login</Link>
+                    <Link to="/" aria-label="On Click" className="footer-item">Home</Link>
+                    <Link to="/about" aria-label="On Click" className="footer-item">About</Link>
+                    <Link to="/menu" aria-label="On Click" className="footer-item">Menu</Link>
+                    <Link to="/reservation" aria-label="On Click" className="footer-item">Reservation</Link>
+                    <Link to="/order" aria-label="On Click" className="footer-item">Order Online</Link>
+                    <Link to="/login" aria-label="On Click" className="footer-item">Login</Link>
                 </ul>
             </div>
             <div className="footer-col">

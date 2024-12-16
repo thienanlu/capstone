@@ -42,6 +42,7 @@
 .form-input-wrapper{
     width: 45%;
     display: flex;
+    position: relative;
     flex-direction: column;
     margin: 16px 16px 0 0;
 }
@@ -117,7 +118,17 @@
     font-weight: 500;
 }
 
-.confirm-booking-wrapper .btn{
-    width: 100%;
-    text-align: center;
+.field-error{
+    color: red;
+    position: absolute;
+    right: 16px;
+    display: inline;
+}
+
+.field-error + input{
+    background-color: #ffcdd2!important;
+}
+
+input:-internal-autofill-selected{
+    background-color: var(--background-color);
 }

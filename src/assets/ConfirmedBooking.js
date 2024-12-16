@@ -1,13 +1,10 @@
-import Header from "./header"
-import Footer from "./footer"
-
 import { Link } from "react-router-dom";
 
 
 function ConfirmedBooking(props){
     return(
         <section className="confirm-booking-page">
-            <div className="confirm-booking-wrapper app-section">
+            <section className="confirm-booking-wrapper app-section">
                 <h3 className="confirm-booking-title">Your booking has been confirmed!</h3>
                 <h4>Booking Details</h4>
                 <section className="booking-details">
@@ -19,7 +16,7 @@ function ConfirmedBooking(props){
                     <p>Occasion Type: <span>{props.occasion}</span></p>
                 </section>
                 <Link to='/' className="btn">Back to Home</Link>
-            </div>
+            </section>
         </section>
     )
 }
