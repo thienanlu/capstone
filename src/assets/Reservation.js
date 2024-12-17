@@ -43,7 +43,7 @@ const fetchAPI = function(date) {
 const UPDATE_TIME = "update";
 
 const updateTime = (availableTimes, date) => {
-  const response = fetchAPI(new Date(date));
+  const response =  fetchAPI(new Date(date));
   return (response.length !== 0) ? response : availableTimes; 
 }
 

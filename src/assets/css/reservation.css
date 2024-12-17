@@ -1,3 +1,16 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px var(--background-color) inset;
+  transition: background-color 5000s ease-in-out 0s;
+};  
+
 .reservation-banner{
     margin-top: 120px;
     display: flex;
@@ -55,7 +68,7 @@
     font-size: 18px;
     color: #000;
     cursor: pointer;
-    background-color: var(--background-color);
+    background-color: var(--background-color)!important;
 }
 
 .form-input-wrapper > input,select,option:focus-visible{
@@ -129,6 +142,14 @@
     background-color: #ffcdd2!important;
 }
 
-input:-internal-autofill-selected{
-    background-color: var(--background-color);
+/* responsive */
+@media (max-width: 480px) {
+    .form-input-wrapper{
+        width: 100%;
+    }
+
+    .booking-details p, .btn{
+        width: 100%;
+        text-align: center;
+    }
 }

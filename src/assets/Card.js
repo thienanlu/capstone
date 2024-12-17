@@ -1,4 +1,5 @@
 import './css/card.css'
+import { Link } from 'react-router-dom'
 
 function Card(props){
     return (
@@ -11,7 +12,7 @@ function Card(props){
             <p className="card-body">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum consectetur eius.  
             </p>
-            <p className='card-btn'>Order Delivery</p>
+            <Link to='/order'className='card-link'>Order Delivery <i class="fa-solid fa-truck"></i> </Link>
         </div>
     )
 }

@@ -4,7 +4,6 @@ import ConfirmedBooking from './ConfirmedBooking'
 
 
 function BookingForm(props){
-    let today = new Date()
     const [name, setName] = useState("")
     const [number, setNumber] = useState({
         value: "",
@@ -22,9 +21,6 @@ function BookingForm(props){
             <span className='field-error'>Phone number must has at least 8 digits</span>
         )
     }
-    const validateDate = () => {
-
-    }
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -34,7 +30,7 @@ function BookingForm(props){
             alert("Your booking has been confirmed");
             console.log('table booking for', name, number, date, time, guest, occasion);
         }
-      };f 
+      };
 
       const isValidated = () => {
         return (
@@ -42,15 +38,6 @@ function BookingForm(props){
           number.value.length >= 8
         );
       };
-
-    const clearForm = () => {
-        setName('')
-        setNumber('')
-        setDate('')
-        setTime('')
-        setGuest('')
-        setOccasion('')
-    }
 
     const handleOnDateChange = (e) => {
         setDate(e.target.value)
@@ -69,7 +56,7 @@ function BookingForm(props){
                 </div>
                 <div className='form-input-wrapper'>
                     <label for="number">Phone number:  <span>*</span> </label> 
-                    {number.isTouched && number.value.length < 8 ? ( 
+                    {number.isTouched && number.value.length < 8 ? (
                         <ErrorMessage message="Phone number must has at least 8 digits" /> ) : null}
                     <input id="number" required onChange={(e) => {setNumber({ ...number, value: e.target.value });}} 
                                     onBlur={() => {setNumber({ ...number, isTouched: true }); }}  type="tel" value={number.value} name="phone" placeholder="Enter your phone number" 

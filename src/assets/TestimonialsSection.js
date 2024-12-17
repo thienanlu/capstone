@@ -10,10 +10,10 @@ function Testimonials(){
                 Testimonials
             </h2>
             <div className="testimonials-category">
-                <Rating name="Paul" img={avatarImage}/>
-                <Rating name="Jessica" img={avatarImage}/>
-                <Rating name="Lucas" img={avatarImage}/>
-                <Rating name="Rebecca" img={avatarImage}/>
+                <Rating name="Paul" img={avatarImage} review="Delicious food, great ambiance, friendly service, highly recommend!"/>
+                <Rating name="Jessica" img={avatarImage} review="Amazing flavors, cozy atmosphere, exceptional service, will return."/>
+                <Rating name="Lucas" img={avatarImage} review="Excellent food, wonderful staff, perfect spot for a night out."/>
+                <Rating name="Rebecca" img={avatarImage} review="Fantastic experience, great food, wonderful service, highly recommend!"/>
             </div>
         </div>
     )

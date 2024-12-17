@@ -10,6 +10,11 @@
     color: #fff;
 }
 
+.rating-card i{
+    margin-left: 8px;
+    color: var(--primary-color-2);
+}
+
 .rating-info{
     display: flex;
     align-items: center;
@@ -23,9 +28,11 @@
 
 .rating-info > p{
     width: 60%;
+    font-weight: 600;
     text-align: center;
 }
 
 .rating-desc{
-    margin-top: 16px;
+    margin-top: 24px;
+    font-weight: 300;
 }
