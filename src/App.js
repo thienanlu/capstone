@@ -19,7 +19,7 @@ function App() {
     <>
       <div className="main">
         <Routes>
-          <Route path="/capstone" element={<Home />} />
+          <Route path="/capstone/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/reservation" element={<Reservation />} />
