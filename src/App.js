@@ -9,7 +9,7 @@ import ConfirmedBooking from './components/ConfirmedBooking'
 
 // import react-router
 import React from 'react'
-import { Routes, Route, Link, HashRouter } from 'react-router-dom'
+import { Routes, Route, Link } from 'react-router-dom'
 
 // import css
 import './App.css'
@@ -19,7 +19,7 @@ function App() {
     <>
       <div className="main">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/capstone" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/reservation" element={<Reservation />} />
