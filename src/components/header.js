@@ -9,7 +9,7 @@ import logo from '../assets/img/Logo.svg';
 function Header(){
     return(
         <header id="header">
-            <Link to='/' aria-label='On Click'><img src={logo} alt="Logo" className="header-logo"/></Link>
+            <Link to='/capstone' aria-label='On Click'><img src={logo} alt="Logo" className="header-logo"/></Link>
             <Navbar />
         </header>
     )

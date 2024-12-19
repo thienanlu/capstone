@@ -27,13 +27,13 @@ function App() {
           </ul>
         </nav> */}
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/reservation" element={<Reservation />} />
-          <Route path="/order" element={<Order />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/confirmation" element={<ConfirmedBooking />} />
+          <Route path="/capstone " element={<Home />} />
+          <Route path="/capstone/about" element={<About />} />
+          <Route path="/capstone/menu" element={<Menu />} />
+          <Route path="/capstone/reservation" element={<Reservation />} />
+          <Route path="/capstone/order" element={<Order />} />
+          <Route path="/capstone/login" element={<Login />} />
+          <Route path="/capstone/confirmation" element={<ConfirmedBooking />} />
         </Routes>
       </HashRouter>
     </div>
