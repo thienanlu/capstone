@@ -9,7 +9,7 @@ import ConfirmedBooking from './components/ConfirmedBooking'
 
 // import react-router
 import React from 'react'
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route, Link, HashRouter } from 'react-router-dom'
 
 // import css
 import './App.css'
