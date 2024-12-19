@@ -1,4 +1,4 @@
-import './css/rating.css'
+import '../assets/css/rating.css'
 
 function Rating(props){
     return (

@@ -1,6 +1,5 @@
 // import images
-import chefImage1 from  './img/Mario and Adrian A.jpg'
-import chefImage2 from  './img/Mario and Adrian b.jpg'
+import chefImage1 from  '../assets/img/Mario and Adrian A.jpg'
 
 
 function AboutSection(){

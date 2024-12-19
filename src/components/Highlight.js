@@ -3,9 +3,9 @@ import Button from './button.js';
 import Card from './Card.js';
 
 // import image
-import SaladImage from './img/greek salad.jpg'
-import BruchettaImage from './img/bruchetta.svg'
-import DessertImage from './img/lemon dessert.jpg'
+import SaladImage from '../assets/img/greek salad.jpg'
+import BruchettaImage from '../assets/img/bruchetta.svg'
+import DessertImage from '../assets/img/lemon dessert.jpg'
 
 function Highlight(){
     return(

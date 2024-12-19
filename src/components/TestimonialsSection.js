@@ -1,7 +1,7 @@
 import Rating from "./Rating";
 
 // import image
-import avatarImage from './img/user-avatar.jpg'
+import avatarImage from '../assets/img/user-avatar.jpg'
 
 function Testimonials(){
     return (

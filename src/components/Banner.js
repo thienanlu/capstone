@@ -1,6 +1,6 @@
-import bannerImg from './img/restauranfood.jpg'
+import bannerImg from '../assets/img/restauranfood.jpg'
 
-import './css/banner.css'
+import '../assets/css/banner.css'
 
 function Bannner(props){
     return (

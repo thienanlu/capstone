@@ -1,11 +1,11 @@
 // import components
-import Home from './assets/Home'
-import About from './assets/About'
-import Menu from './assets/Menu'
-import Reservation from  './assets/Reservation'
-import Order from './assets/Order'
-import Login from './assets/Login'
-import ConfirmedBooking from './assets/ConfirmedBooking'
+import Home from './components/Home'
+import About from './components/About'
+import Menu from './components/Menu'
+import Reservation from  './components/Reservation'
+import Order from './components/Order'
+import Login from './components/Login'
+import ConfirmedBooking from './components/ConfirmedBooking'
 
 // import react-router
 import React from 'react'

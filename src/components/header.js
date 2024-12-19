@@ -1,10 +1,10 @@
 // import components
-import './css/header.css'
+import '../assets/css/header.css'
 import Navbar from './Navbar';
 import {Link} from 'react-router-dom';
 
 // import image
-import logo from './img/Logo.svg';
+import logo from '../assets/img/Logo.svg';
 
 function Header(){
     return(

@@ -5,7 +5,7 @@ import Footer from "./footer";
 import ConfirmedBooking from "./ConfirmedBooking";
 import BookingForm from "./BookingForm";
 // import BookingImage from './img/restaurant.jpg';
-import './css/reservation.css';
+import '../assets/css/reservation.css';
 
 function initializeTimes(){
     let date = new Date();

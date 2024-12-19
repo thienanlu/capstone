@@ -1,9 +1,9 @@
 // import files
-import './css/footer.css'
+import '../assets/css/footer.css'
 import { Link } from 'react-router-dom';
 
 // import image
-import logo from './img/Logo.svg'
+import logo from '../assets/img/Logo.svg'
 
 function Footer(){
     return(

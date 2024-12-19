@@ -6,7 +6,7 @@ import Highlight from './Highlight'
 import Testimonials from './TestimonialsSection'
 import AboutSection from './AboutSection'
 
-import './css/home.css'
+import '../assets/css/home.css'
 
 function Home(){
     return (

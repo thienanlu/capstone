@@ -1,8 +1,9 @@
+
 // import files
 import Button from "./button";
-import './css/billboard.css'
+import '../assets/css/billboard.css'
 
-import billboardImage from './img/restaurant.jpg'
+import billboardImage from '../assets/img/restaurant.jpg'
 function Billboard(){
     return(
         <section id="billboard" className="app-section">
