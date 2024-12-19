@@ -1,6 +1,6 @@
 // App.js
 import React from 'react';
-import { Routes, Route, Link, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, Link, HashRouter } from 'react-router-dom';
 
 // Import your components
 import Home from './components/Home';
@@ -10,12 +10,11 @@ import Reservation from './components/Reservation';
 import Order from './components/Order';
 import Login from './components/Login';
 import ConfirmedBooking from './components/ConfirmedBooking';
-import NotFound from './components/NotFound'; // Create a NotFound component
 
 function App() {
   return (
     <div className="main">
-      <BrowserRouter>
+      <HashRouter>
         {/* <nav>
           <ul>
             <li><Link to="/">Home</Link></li>
@@ -35,9 +34,8 @@ function App() {
           <Route path="/order" element={<Order />} />
           <Route path="/login" element={<Login />} />
           <Route path="/confirmation" element={<ConfirmedBooking />} />
-          <Route path="*" element={<NotFound />} /> {/* Catch-all route for 404 */}
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
