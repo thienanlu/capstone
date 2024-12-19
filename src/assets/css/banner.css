@@ -1,0 +1,20 @@
+.banner{
+    padding: 68px 96px;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color-1);
+}
+
+.banner img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.banner-title{
+    font-size: 64px;
+    color: var(--primary-color-2);
+}
